@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  minecraft:
+    build:
+      context: .
+    container_name: minecraft_env
+    ports:
+      - "25565:25565"
+      - "8080:8080"
+    volumes:
+      - ./minecraft:/home/coder/project
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
