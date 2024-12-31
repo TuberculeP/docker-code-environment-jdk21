@@ -7,7 +7,7 @@ services:
     container_name: minecraft_env
     ports:
       - "25565:25565"
-      - "8080:8080"
+      - "3015:8080"
     volumes:
       - ./minecraft:/home/coder/project
     stdin_open: true
